@@ -2,6 +2,7 @@
 
 <h5 align="center">
 🚀 Welcome to the repo of STILL! 
+🎉 STILL has been accepted to NeurIPS’26!
 
 
 This repo contains the official code for STILL.
