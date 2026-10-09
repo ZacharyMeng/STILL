@@ -1,0 +1,28 @@
+data:
+  name: "alpaca_cleand"
+  path: "yahma/alpaca-cleaned"
+  batch_size: 8
+  micro_batch_size: 1
+  val_set_size: 200
+model:
+  name: 'still_at'
+  pretrained_model_name_or_path: '/your/Still/checkpoints/still_base'
+  max_length: 1024
+  # tokenizer
+  add_eos_token: False 
+  
+  device_map: 'auto' 
+train:
+  optim: 'adamw_torch'
+  lr: 0.01
+  epochs: 2
+  max_grad_norm: 1.0
+  output_dir: 'checkpoints'
+  train_qk: False
+  train_qk_lora: False
+  train_v: False
+  train_v_lora: False
+  train_g: False
+  train_g_lora: False
+  train_o: False
+  train_o_lora: False
